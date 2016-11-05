@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3AF9C991DCE7BDC00E1738D /* firstCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AF9C981DCE7BDC00E1738D /* firstCustomSegue.swift */; };
 		D3CE16D51DCDA15A00324C67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE16D41DCDA15A00324C67 /* AppDelegate.swift */; };
 		D3CE16D71DCDA15A00324C67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE16D61DCDA15A00324C67 /* ViewController.swift */; };
 		D3CE16DA1DCDA15A00324C67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CE16D81DCDA15A00324C67 /* Main.storyboard */; };
 		D3CE16DC1DCDA15A00324C67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CE16DB1DCDA15A00324C67 /* Assets.xcassets */; };
 		D3CE16DF1DCDA15A00324C67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CE16DD1DCDA15A00324C67 /* LaunchScreen.storyboard */; };
+		D3CE16E91DCDA28800324C67 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE16E81DCDA28800324C67 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3AF9C981DCE7BDC00E1738D /* firstCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstCustomSegue.swift; sourceTree = "<group>"; };
 		D3CE16D11DCDA15A00324C67 /* SwiftCustomSegues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCustomSegues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CE16D41DCDA15A00324C67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3CE16D61DCDA15A00324C67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D3CE16DB1DCDA15A00324C67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3CE16DE1DCDA15A00324C67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3CE16E01DCDA15A00324C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3CE16E81DCDA28800324C67 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		D3CE16D31DCDA15A00324C67 /* SwiftCustomSegues */ = {
 			isa = PBXGroup;
 			children = (
+				D3CE16E01DCDA15A00324C67 /* Info.plist */,
 				D3CE16D41DCDA15A00324C67 /* AppDelegate.swift */,
+				D3AF9C981DCE7BDC00E1738D /* firstCustomSegue.swift */,
+				D3CE16E81DCDA28800324C67 /* SecondViewController.swift */,
 				D3CE16D61DCDA15A00324C67 /* ViewController.swift */,
-				D3CE16D81DCDA15A00324C67 /* Main.storyboard */,
 				D3CE16DB1DCDA15A00324C67 /* Assets.xcassets */,
 				D3CE16DD1DCDA15A00324C67 /* LaunchScreen.storyboard */,
-				D3CE16E01DCDA15A00324C67 /* Info.plist */,
+				D3CE16D81DCDA15A00324C67 /* Main.storyboard */,
 			);
 			path = SwiftCustomSegues;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					D3CE16D01DCDA15A00324C67 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -135,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3CE16E91DCDA28800324C67 /* SecondViewController.swift in Sources */,
+				D3AF9C991DCE7BDC00E1738D /* firstCustomSegue.swift in Sources */,
 				D3CE16D71DCDA15A00324C67 /* ViewController.swift in Sources */,
 				D3CE16D51DCDA15A00324C67 /* AppDelegate.swift in Sources */,
 			);
@@ -255,6 +264,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seimith.SwiftCustomSegues;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -266,6 +276,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seimith.SwiftCustomSegues;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -288,6 +299,7 @@
 				D3CE16E51DCDA15A00324C67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
