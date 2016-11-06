@@ -33,6 +33,7 @@ class firstCustomSegue: UIStoryboardSegue {
             initalView?.frame = (initalView?.frame.offsetBy(dx: -screenWidth, dy: 0))!
             destinationView?.frame = (destinationView?.frame.offsetBy(dx: -screenWidth, dy: 0))!
         }) { (Bool) in
+            // MARK: Understand?
             self.source.present(self.destination, animated: false, completion: nil)
         }
     }
